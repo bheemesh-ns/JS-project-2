@@ -10,14 +10,13 @@ function lower(){
 }
 
 var size = 16;
-
 function incfont(){
     var outt = document.getElementById("out");
     size += 2;
     outt.style.fontSize = size + "px";
 }
 
-function decfont(){
+function decfont(){ 
     var outt = document.getElementById("out");
     size -= 2;
     outt.style.fontSize = size + "px";
