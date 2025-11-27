@@ -9,7 +9,7 @@ function lower(){
     document.getElementById("out").innerText = input.toLowerCase();
 }
 
-var size = 16;
+var size = 30;
 function incfont(){
     var outt = document.getElementById("out");
     size += 2;
@@ -19,5 +19,11 @@ function incfont(){
 function decfont(){ 
     var outt = document.getElementById("out");
     size -= 2;
+    outt.style.fontSize = size + "px";
+}
+
+function resetsize(){
+    var outt = document.getElementById("out");
+    size = 30;
     outt.style.fontSize = size + "px";
 }
